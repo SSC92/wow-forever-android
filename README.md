@@ -20,10 +20,12 @@ This uses Blizzard's own **Windows ARM64** WoW client, so the game itself runs n
 | RedMagic 11 Pro (Snapdragon 8 Elite / Adreno 840) | Tested in-world by arusiasotto |
 | Poco F7 (Snapdragon 8s Gen 4 / Adreno 825) | Tested by gusebus |
 | Samsung Galaxy S23/S24/S25 / Z Fold series | Supported (with automatic Samsung UBWC optimization) |
+| **Anbernic RG477M** (Dimensity 8300 / Mali-G615 MC6) | **Experimental** — uses system Mali Vulkan driver (no Turnip). See [EXPERIMENTAL_RG477M.md](EXPERIMENTAL_RG477M.md) |
 
 Requirements:
 
 - Snapdragon 8 series (Adreno 7xx or Adreno 8xx). The app bundles both the Adreno 740 driver and the Turnip v32 driver for Snapdragon 8 Elite / Adreno 8xx, automatically detecting the GPU and applying the optimal driver and environment flags.
+- **Experimental Mali support** (this fork): Anbernic RG477M (MediaTek Dimensity 8300 / Mali-G615) is detected and configured to use the system Mali Vulkan driver via the wrapper. Performance and stability are not guaranteed. See [EXPERIMENTAL_RG477M.md](EXPERIMENTAL_RG477M.md).
 - Android 10 or newer, 64-bit.
 - About **60 GB** free for the game data (internal storage or SD card), plus about 4 GB of internal storage for the app and its Windows environment.
 - Wi-Fi. A computer is optional: it only speeds up the first install by copying the game data over instead of streaming it.
