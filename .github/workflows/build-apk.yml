@@ -27,6 +27,7 @@ jobs:
           echo "ANDROID_SDK_ROOT=/usr/local/lib/android/sdk" >> $GITHUB_ENV
           yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
           $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platforms;android-36" "build-tools;36.0.0" "ndk;27.3.13750724" "platform-tools"
+          echo "sdk.dir=$ANDROID_HOME" > local.properties
 
       - name: Fetch components
         run: |
